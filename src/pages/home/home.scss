@@ -56,6 +56,11 @@ $button-color: #fff;
         bottom: 2px;
             animation: kc 4s infinite;
 
+             @media(min-width:769px) {
+                      display:none;
+                 
+                    }
+
 
            
         // left:0;

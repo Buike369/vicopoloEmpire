@@ -20,7 +20,7 @@ const Footer = () => {
         </ div >
          < div className='FooterDiv8'>
           < div className='FooterDiv3'>Design</ div >
-          < div className='FooterDiv9'><a  href="tel:+2348167029609" style={{color:"#fff"}}>+1234567890</a></ div >
+          < div className='FooterDiv9'><a  href="tel:+2348167029609" style={{color:"#fff"}}>+2349071071018</a></ div >
           < div className='FooterDiv10'>info@luminiacreatives.com</ div >
          </ div >
           < div className='FooterDiv8'>
