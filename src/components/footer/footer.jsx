@@ -21,11 +21,11 @@ const Footer = () => {
          < div className='FooterDiv8'>
           < div className='FooterDiv3'>Design</ div >
           < div className='FooterDiv9'><a  href="tel:+2348167029609" style={{color:"#fff"}}>+2349071071018</a></ div >
-          < div className='FooterDiv10'>info@luminiacreatives.com</ div >
+          < div className='FooterDiv10'>info@VicoploEmpire.com</ div >
          </ div >
           < div className='FooterDiv8'>
             < div className='FooterDiv3'>Services</ div >
-            < div className='FooterDiv13'>We craft visual stories that engage audiences effectively.</ div >
+            < div className='FooterDiv13'>We craft visual solutions that engage audiences effectively.</ div >
             < div className='FooterDiv14'>
               <ul>
                 <li><a href=""><FontAwesomeIcon icon={faFacebook}  className=" " style={{fontSize:"20px",color:"#c5c5c5",marginRight:"8px"}}  /></a></li>

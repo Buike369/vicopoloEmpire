@@ -1,0 +1,21 @@
+.ServicesTag{
+    .ServicesTag1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 60vh;
+
+        .ServicesTag2{
+            font-size: 50px;
+            font-weight: 600;
+            width: 40%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .ServicesTag3{
+            width: 50%;
+            text-align: center;
+        }
+    }
+}

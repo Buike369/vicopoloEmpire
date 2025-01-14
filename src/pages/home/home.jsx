@@ -5,7 +5,7 @@ import Testimony  from "../../components/testimony/testimony"
 
 const Home = () => {
 
-  const card =[{id:1,img:"", header:'Video Production',text:"Crafting compelling stories through high-quality video."},{id:2,img:"", header:"Branding Design", text:"Designing unique brand identities that resonate"},{id:3, img:'', header:"Photography Services", text:"Engaging digital marketing strategies for growth."}]
+  const card =[{id:1,img:"kbbb2.png", header:'Video Production',text:"Crafting compelling stories through high-quality video."},{id:2,img:"", header:"Branding Design", text:"Designing unique brand identities that resonate"},{id:3, img:'', header:"Photography Services", text:"Engaging digital marketing strategies for growth."},{id:4, img:'', header:"Web Development", text:"Build dynamic, secure, user-friendly websites for everyone."},{id:5, img:'', header:"AI Services", text:"Develop AI-powered, secure, user-friendly solutions for everyone."}]
    const card1 =[{id:1,img:"/phot.avif", header:'Video Production Service',text:"Expertly crafted videos that engage audiences and elevate your brand's storytelling to new heights."},{id:2,img:"/photong.avif", header:"Branding & Design", text:"Unique branding solutions that resonate with your audience, enhancing your identity and market presence effectively."},{id:3, img:'/phot1.avif', header:"Strategic marketing services", text:"Engaging digital marketing strategies for growth."}]
   return (
     <div className='Section1' >
@@ -16,7 +16,7 @@ const Home = () => {
         <div className='sectionMainA'>
           <div  className='enn'>Transform Your <span >Digital Presence</span> with VicpoloEmpire</div>
           <p className='enn1'>Transforming ideas into stunning visual experiences for your business.</p>
-         <div className='rt'> <button>Discover</button></div>
+         <a href="/contact"><div className='rt'> <button>Discover</button></div></a>
         </div>
         <div className='sectionMainA  imgMaDiv'>
           <img src="/photo23.avif" alt="" className='imgMain' />
@@ -31,9 +31,12 @@ const Home = () => {
       <div className='Services'>
         {card.map((app)=>(
         <div className='serviceCard' key={app.id}>
-          <div  className=''>
+          <div  className='FImg'>
             <img  src="/iii.svg" alt=""/>
            </div>
+           {/* <div  className='IconImg'>
+            <img  src={app.img}  alt=""/>
+           </div> */}
           <p className='Vp'>{app.header}</p>
           <p className='Vp1'>{app.text}</p>
 
@@ -48,7 +51,7 @@ const Home = () => {
           {/* <div className="CratU"></div> */}
           <div  className='Craft2'>Creating Compelling Visual Journey</div>
           
-          <p className='Craft3'>At VicopoloEmpire, we specialize in premium video production, branding, and digital marketing to help brands connect and engage with their audience through innovative visual experiences.</p>
+          <p className='Craft3'>At VicopoloEmpire, we specialize in premium video production, branding,  web development, AI services and digital marketing to help brands connect and engage with their audience through innovative visual experiences.</p>
    <div className='Craft7'>
   <div className='Craft4'>
     <div className='Craft5'>150+</div>
@@ -70,7 +73,7 @@ const Home = () => {
       <div className='MdSolutions'>
         <div className='MdSolutions1'>Artistic Media Concepts</div>
         <div className='TN'></div>
-        <div className='MdSolutions2'>Transforming brands through innovative video production, design, and digital marketing strategies tailored for success.</div>
+        <div className='MdSolutions2'>Transforming brands through innovative video production, design,   web development, AI services and digital marketing strategies tailored for success.</div>
 
         <div  className='MdSolutions3'>
           {card1.map((app)=>(

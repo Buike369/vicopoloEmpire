@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import "./register.css"
+import withTitle from '../..//title';
 import { Link,useNavigate} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye,faEyeSlash} from '@fortawesome/free-solid-svg-icons'
@@ -16,7 +17,7 @@ const Register =()=>{
   
     return(
         <div className="BgColor" >
-            <Navbar/>
+            {/* <Navbar/> */}
 
             <div className="formDivPAd">
             
@@ -27,12 +28,13 @@ const Register =()=>{
       {/* {message && <div style={{color:"#fff",position:"absolute",zIndex:"500",left:"50%",right:"50%",top:"-5%",padding:"5px 10px",backgroundColor:"#20263a",width:"100%",transform:"translate(-50%,-50%)",textAlign:"center",borderRadius:"5px"}}>{message}</div>} */}
                      <p className="New_Account textAdmin">Create an Account</p>
                      
-                     
-                    <div> <input type="text" placeholder="Full Name"  className="Full_Name" name="username"/></div>
-                    <div> <input type="email" placeholder="Email" className="Full_Name"  name="email"/></div>
+                     <div><label className="LabNa">Full Name</label></div>
+                    <div> <input type="text" placeholder=""  className="Full_Name" name="username"/></div>
+                    <div><label   className="LabNa">Email</label></div>
+                    <div> <input type="email" placeholder="" className="Full_Name"  name="email"/></div>
                 
-
-                    <div className="sers"> <input type="password" placeholder="Password" className="Full_Name "  name="password" />
+                    <div><label className="LabNa">Password</label></div>
+                    <div className="sers"> <input type="password" placeholder="" className="Full_Name "  name="password" />
                  {/* <FontAwesomeIcon icon={faEye} className="PlusIcon plusIcon2 ser1" />:<FontAwesomeIcon icon={faEyeSlash} className="PlusIcon plusIcon2 ser1" onClick={handleClickShowPassword}/>  */}
                  </div>
                  
@@ -65,4 +67,4 @@ const Register =()=>{
     )
 }
 
-export default Register;
+export default withTitle(Register,  "Register with VicopoloEmpire");

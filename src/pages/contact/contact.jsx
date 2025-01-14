@@ -103,7 +103,7 @@ setError("invalid Email")
     
  const inputs = [{label:"Full Name",type:"text", name:"fullName",holder:"Full Name",value:inputs1.fullName,icon:faAddressBook},{label:"Company Name",type:"text",name:"subject",holder:"Company Name",value:inputs1.subject,icon:faHouse},{label:"Email",type:"email",name:"email",holder:"Email",value:inputs1.email,icon:faEnvelope},{label:"Phone",type:"number",name:"phone",holder:"Phone",value:inputs1.phone,icon:faPhone}]
 
-  const PhoneNum ="+2348167029609"
+  const PhoneNum ="+2349071071018"
  const socialLink = [{icon:faTwitter,link:"https://x.com/ChukwubuikeK?t=Ksk86TowzZrQ7X_21swBIg&s=09"},{icon:faFacebookF,link:"https://www.facebook.com/profile.php?id=100070000591981&mibextid=ZbWKwL"},{icon:faTelegram,link:"https://www.linkedin.com/in/chukwubuike-kingsley-1a6054224"},{icon:faYoutube,link:"https://www.linkedin.com/in/chukwubuike-kingsley-1a6054224"}]
   return (
     <div>
@@ -159,7 +159,7 @@ setError("invalid Email")
                     </div> */}
 
                     <div className='UUH'>
-                        <div className='ifUs'>We’d love to hear from you! Reach out for video production, branding, and digital marketing inquiries.</div>
+                        <div className='ifUs'>We’d love to hear from you! Reach out for video  production, branding, web development, AI services and digital marketing inquiries.</div>
                     <div>
                         <div className='graceDay'>Working Days! </div>
                         <div className='wedDis'>Monday -Saturday 7:00am- 5PM. </div>
@@ -172,7 +172,7 @@ setError("invalid Email")
                         <div className='graceDay'>
                             Contact Information
                         </div>
-                        <div className='wedDis'>Office Phone:  <a href={`tel:${PhoneNum}`} style={{color:"#51bfb2",fontWeight:"600"}}>+234 906 0243 960</a></div>
+                        <div className='wedDis'>Office Phone:  <a href={`tel:${PhoneNum}`} style={{color:"#51bfb2",fontWeight:"600"}}>+234 907 1071 018</a></div>
                         <div className='wedDis'>Email: chukwubuikekingsley@gmail.com</div>
                         <div className='deed'>Mailing Address:</div>
                         <div className='wedDis'>P.O. Box 1639</div>
@@ -195,4 +195,4 @@ setError("invalid Email")
   )
 }
 
-export default withTitle(Contact, 'Contact Us at - Adane Technology');
+export default withTitle(Contact, 'Contact Us at - VicopoloEmpire');

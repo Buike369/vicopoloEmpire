@@ -1,5 +1,6 @@
 import React,{useState,useContext} from "react";
 import "../register/register.css";
+import withTitle from '../..//title';
 import "./login.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye,faEyeSlash} from '@fortawesome/free-solid-svg-icons'
@@ -11,15 +12,15 @@ const Login =()=>{
 
     return(
         <div className="BgColor" >
-                 <Navbar/>
+                
           
-          <div className="ffDS">
+          
             <div className="Form_Divbb">
               
            <div className="Form_Div renttt pK">
                <form>
                   
-                  <div className="welcome4 textAdmin">Login Here</div>
+                  <div className="welcome4 textAdmin">Sign in  to VicopoloEmpire</div>
                   <div> <input type="email" placeholder="Email" className="Full_Name " name="email" /></div>
                   <div className="sers"> <input type="password" placeholder="Password" className="Full_Name " name="password" 
                   />
@@ -42,11 +43,11 @@ const Login =()=>{
          
          
            </div>
-           </div>
+           
         
              
         </div>
     )
 }
 
-export default Login;
+export default withTitle(Login, "Sign In to VicoploEmpire");

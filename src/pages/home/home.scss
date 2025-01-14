@@ -51,9 +51,12 @@ $button-color: #fff;
                     }
         }
   .rrImg{
+    
     img{
         position: absolute;
         bottom: 2px;
+    width: 150px;
+        height: 150px;
             animation: kc 4s infinite;
 
              @media(min-width:769px) {
@@ -208,7 +211,15 @@ $button-color: #fff;
                     z-index: -1;
     background: linear-gradient(90deg, #e9d020, #02a48e, #374f4c);
             }
-            div{
+            .IconImg{
+                width:100px;
+                height: 100px;
+
+                img{
+                    width:100%;
+                }
+            }
+            .FImg{
                 img{
                        width: 100%;
     position: absolute;

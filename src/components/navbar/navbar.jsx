@@ -121,8 +121,8 @@ const Header = () => {
      <div className={`menuBox ${addRight}`} >
       <div className='baclo' onClick={handleCheckboxChange}></div>
     <ul className="menuBox24">
-      <li><div className='gFerL'><FontAwesomeIcon icon={faXmark}  className=" " style={{fontSize:"26px",color:"#2f3a5b"}} onClick={handleCheckboxChange} /></div></li>
-      <li><div className='reff aaFF'><a href="/login"><button className='RegRef' style={{background:"#2e756d"}}>Sign In</button></a><a href="/register"><button className='RegRef'>Register</button></a></div></li>
+      <li><div className='gFerL'><FontAwesomeIcon icon={faXmark}  className=" " style={{fontSize:"26px",color:"#fff"}} onClick={handleCheckboxChange} /></div></li>
+      <li><div className='reff aaFF'><a href="/login"><button className='RegRef' style={{background:"#2e756d"}}>Log In</button></a><a href="/register"><button className='RegRef'>Register</button></a></div></li>
             <li><a className="menuItem" href="/about">About Us</a></li>
        <li><a className="menuItem met" onClick={()=>setDropdown(!dropdown)} >Services <span style={{color:"#fff",marginLeft:"5px",fontSize:"18px"}}>{dropdown ? <FontAwesomeIcon icon={faCircleChevronUp}  className=" " style={{fontSize:"20px",color:"#c5c5c5"}}  />: <FontAwesomeIcon icon={faCircleChevronDown}  className=" " style={{fontSize:"20px",color:"#c5c5c5"}}  />}</span></a>
        {dropdown ? 
@@ -130,6 +130,8 @@ const Header = () => {
              <div className='mns41'><a href="" className='mns4'><FontAwesomeIcon icon={faArrowRight}  className=" " style={{fontSize:"20px",color:"#c5c5c5",marginRight:"8px"}}  />Video Production</a></div>
              <div className='mns41'><a href="" className='mns4'><FontAwesomeIcon icon={faArrowRight}  className=" " style={{fontSize:"20px",color:"#c5c5c5",marginRight:"8px"}}  />Branding Design</a></div>
               <div className='mns41'><a href="" className='mns4'><FontAwesomeIcon icon={faArrowRight}  className=" " style={{fontSize:"20px",color:"#c5c5c5",marginRight:"8px"}}  />Photography Services</a></div>
+                           <div className='mns41'><a href="" className='mns4'><FontAwesomeIcon icon={faArrowRight}  className=" " style={{fontSize:"20px",color:"#c5c5c5",marginRight:"8px"}}  />Web  Development</a></div>
+              <div className='mns41'><a href="" className='mns4'><FontAwesomeIcon icon={faArrowRight}  className=" " style={{fontSize:"20px",color:"#c5c5c5",marginRight:"8px"}}  />AI Services</a></div>
                
 
           </div>
