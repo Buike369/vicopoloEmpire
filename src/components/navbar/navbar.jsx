@@ -89,7 +89,7 @@ const Header = () => {
         <div className="nacBar">
            
           <ul className="NavbarUl" >
-            <li><a href="/" className="navbar1_link">About Us</a></li> 
+            <li><a href="/about" className="navbar1_link">About Us</a></li> 
            
              <li ><a href="/services" className="navbar1_link">Services</a></li>
               <li ><a href="/" className="navbar1_link">Portfolio</a></li>
@@ -124,7 +124,8 @@ const Header = () => {
       <li><div className='gFerL'><FontAwesomeIcon icon={faXmark}  className=" " style={{fontSize:"26px",color:"#fff"}} onClick={handleCheckboxChange} /></div></li>
       <li><div className='reff aaFF'><a href="/login"><button className='RegRef' style={{background:"#2e756d"}}>Log In</button></a><a href="/register"><button className='RegRef'>Register</button></a></div></li>
             <li><a className="menuItem" href="/about">About Us</a></li>
-       <li><a className="menuItem met" onClick={()=>setDropdown(!dropdown)} >Services <span style={{color:"#fff",marginLeft:"5px",fontSize:"18px"}}>{dropdown ? <FontAwesomeIcon icon={faCircleChevronUp}  className=" " style={{fontSize:"20px",color:"#c5c5c5"}}  />: <FontAwesomeIcon icon={faCircleChevronDown}  className=" " style={{fontSize:"20px",color:"#c5c5c5"}}  />}</span></a>
+            <li><a className="menuItem" href="/services">Services</a></li>
+       {/* <li><a className="menuItem met" onClick={()=>setDropdown(!dropdown)} >Services <span style={{color:"#fff",marginLeft:"5px",fontSize:"18px"}}>{dropdown ? <FontAwesomeIcon icon={faCircleChevronUp}  className=" " style={{fontSize:"20px",color:"#c5c5c5"}}  />: <FontAwesomeIcon icon={faCircleChevronDown}  className=" " style={{fontSize:"20px",color:"#c5c5c5"}}  />}</span></a>
        {dropdown ? 
           <div>
              <div className='mns41'><a href="" className='mns4'><FontAwesomeIcon icon={faArrowRight}  className=" " style={{fontSize:"20px",color:"#c5c5c5",marginRight:"8px"}}  />Video Production</a></div>
@@ -136,7 +137,7 @@ const Header = () => {
 
           </div>
           :""}
-       </li>
+       </li> */}
               <li><a className="menuItem" href="/">Portfolio</a></li>
 
 

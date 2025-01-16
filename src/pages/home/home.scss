@@ -27,8 +27,9 @@ $button-color: #fff;
         margin: auto;
         height: 500px;
         position: relative;
-        padding-bottom: 20px;
+       
         margin-top: 30px;
+        padding: 0 15px 20px 15px;
 
         @media(max-width:768px){
             flex-direction: column;
@@ -211,6 +212,13 @@ $button-color: #fff;
                     z-index: -1;
     background: linear-gradient(90deg, #e9d020, #02a48e, #374f4c);
             }
+
+                         @media(max-width:768px) {
+                             width:100%;
+                             max-width: 500px;
+                             margin: 0   auto  0px auto;
+            
+                         }
             .IconImg{
                 width:100px;
                 height: 100px;
@@ -269,6 +277,10 @@ $button-color: #fff;
     @media(max-width:768px) {
             flex-direction: column-reverse;
                     height: 500px;
+                    width: 100%;
+                    max-width: 500px;
+                    margin: 0  auto 30px auto;
+                    
     
         }
   
@@ -370,6 +382,15 @@ $button-color: #fff;
                      max-width: 1200px;
                       padding: 50px 15px;
                      margin:auto;
+
+                    @media(max-width:768px) {
+                       
+                            width: 100%;
+                            max-width: 500px;
+                            margin: 0 auto 0px auto;
+                    
+                    
+                        }
 
                     .TN {
                             width: 200px;

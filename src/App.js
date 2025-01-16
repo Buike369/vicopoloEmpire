@@ -12,6 +12,7 @@ import Home  from "./pages/home/home"
 import Contact  from "./pages/contact/contact"
 import Register  from "./pages/register/register"
 import Login  from "./pages/login/login"
+import About  from "./pages/About/about"
 import Services from "./pages/services/services"
 
 
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />
+      }
+      ,
+       {
+        path: "/about",
+        element: <About/>
       }
       ,
       {

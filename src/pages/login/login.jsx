@@ -21,8 +21,10 @@ const Login =()=>{
                <form>
                   
                   <div className="welcome4 textAdmin">Sign in  to VicopoloEmpire</div>
-                  <div> <input type="email" placeholder="Email" className="Full_Name " name="email" /></div>
-                  <div className="sers"> <input type="password" placeholder="Password" className="Full_Name " name="password" 
+                                       <div><label className="LabNa">Email</label></div>
+                  <div> <input type="email" placeholder="" className="Full_Name " name="email" /></div>
+                                       <div><label className="LabNa">Password</label></div>
+                  <div className="sers"> <input type="password" placeholder="" className="Full_Name " name="password" 
                   />
 {/* <FontAwesomeIcon icon={faEye} className="PlusIcon plusIcon2 ser1" />:<FontAwesomeIcon icon={faEyeSlash} className="PlusIcon plusIcon2 ser1" /> */}
  </div>

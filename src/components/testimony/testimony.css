@@ -159,7 +159,7 @@
 }
 
 .partnerShip {
-    color:#00a38d;
+    color:#75c5ba;
     margin: 15px 5px 20px 5px;
     line-height: 20px;
     font-size: 16px;
@@ -211,4 +211,7 @@
     .TheyAre {
         margin-bottom: 5px;
     }
+        .partnerShip{
+            min-height: 170px;
+        }
 }
