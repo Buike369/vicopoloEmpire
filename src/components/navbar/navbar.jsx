@@ -81,7 +81,7 @@ const Header = () => {
             <div><a href="/" className="Brand">
             <div className='headerLogo'>
               {/* <p className='AMAd'>Bkm </p> */}
-            <img src="/vEmpre.png" alt="" className=''  style={{width:"30px"}}/>
+            <img src="/vEmpre2.png" alt="" className=''  style={{width:"50px"}}/>
             {/* <p className='AMAd'>VicopoloEmpire </p> */}
             </div>
             </a></div>
