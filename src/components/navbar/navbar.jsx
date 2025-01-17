@@ -1,5 +1,6 @@
 
 import React,{useState,useEffect} from 'react'
+import {Link}from "react-router"
 import "./navbar.css"
 
 import "./mobileHeader.css"
@@ -80,8 +81,8 @@ const Header = () => {
             <div><a href="/" className="Brand">
             <div className='headerLogo'>
               {/* <p className='AMAd'>Bkm </p> */}
-            <img src="/img/MaraLogo.png" alt="" className=''  style={{width:"30px"}}/>
-            <p className='AMAd'>VicopoloEmpire </p>
+            <img src="/vEmpre.png" alt="" className=''  style={{width:"30px"}}/>
+            {/* <p className='AMAd'>VicopoloEmpire </p> */}
             </div>
             </a></div>
             {(tr === "/register") || (tr === "/login") || (tr === "/forget-password") || (tr === "/update-password")  ? "":
@@ -92,7 +93,8 @@ const Header = () => {
             <li><a href="/about" className="navbar1_link">About Us</a></li> 
            
              <li ><a href="/services" className="navbar1_link">Services</a></li>
-              <li ><a href="/" className="navbar1_link">Portfolio</a></li>
+                          <li ><a href="/terms" className="navbar1_link">Terms</a></li>
+              <li ><Link to="/#portfolio" className="navbar1_link">Portfolio</Link></li>
                             {/* <li ><a href="/" className="navbar1_link">Career</a></li>
                <li ><a href="/" className="navbar1_link">Blog</a></li> */}
 
@@ -122,9 +124,10 @@ const Header = () => {
       <div className='baclo' onClick={handleCheckboxChange}></div>
     <ul className="menuBox24">
       <li><div className='gFerL'><FontAwesomeIcon icon={faXmark}  className=" " style={{fontSize:"26px",color:"#fff"}} onClick={handleCheckboxChange} /></div></li>
-      <li><div className='reff aaFF'><a href="/login"><button className='RegRef' style={{background:"#2e756d"}}>Log In</button></a><a href="/register"><button className='RegRef'>Register</button></a></div></li>
-            <li><a className="menuItem" href="/about">About Us</a></li>
-            <li><a className="menuItem" href="/services">Services</a></li>
+      <li><div className='reff aaFF'><a href="/login" onClick={handleCheckboxChange}><button className='RegRef' style={{background:"#2e756d"}}>Log In</button></a><a href="/register"><button className='RegRef'>Register</button></a></div></li>
+            <li><a className="menuItem" href="/about" >About Us</a></li>
+            <li><a className="menuItem" href="/services" >Services</a></li>
+                        <li><a className="menuItem" href="/terms"  ><div >Terms</div></a></li>
        {/* <li><a className="menuItem met" onClick={()=>setDropdown(!dropdown)} >Services <span style={{color:"#fff",marginLeft:"5px",fontSize:"18px"}}>{dropdown ? <FontAwesomeIcon icon={faCircleChevronUp}  className=" " style={{fontSize:"20px",color:"#c5c5c5"}}  />: <FontAwesomeIcon icon={faCircleChevronDown}  className=" " style={{fontSize:"20px",color:"#c5c5c5"}}  />}</span></a>
        {dropdown ? 
           <div>
@@ -138,7 +141,7 @@ const Header = () => {
           </div>
           :""}
        </li> */}
-              <li><a className="menuItem" href="/">Portfolio</a></li>
+              <li><a className="menuItem" href="/#portfolio" >Portfolio</a></li>
 
 
 

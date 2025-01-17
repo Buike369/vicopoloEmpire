@@ -14,6 +14,7 @@ import Register  from "./pages/register/register"
 import Login  from "./pages/login/login"
 import About  from "./pages/About/about"
 import Services from "./pages/services/services"
+import Terms from "./pages/terms/terms"
 
 
 const Layout = () => {
@@ -48,6 +49,11 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services />
+      }
+      ,
+      {
+        path: "/terms",
+        element: <Terms />
       }
     ]
   },

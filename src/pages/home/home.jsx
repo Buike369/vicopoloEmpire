@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import { useLocation } from 'react-router'
 import "./home.scss"
 import  Slide from  "../../components/slide/slide"
 import Testimony  from "../../components/testimony/testimony"
@@ -7,6 +8,17 @@ const Home = () => {
 
   const card =[{id:1,img:"kbbb2.png", header:'Video Production',text:"Crafting compelling stories through high-quality video."},{id:2,img:"", header:"Branding Design", text:"Designing unique brand identities that resonate"},{id:3, img:'', header:"Photography Services", text:"Engaging digital marketing strategies for growth."},{id:4, img:'', header:"Web Development", text:"Build dynamic, secure, user-friendly websites for everyone."},{id:5, img:'', header:"AI Services", text:"Develop AI-powered, secure, user-friendly solutions for everyone."}]
    const card1 =[{id:1,img:"/phot.avif", header:'Video Production Service',text:"Expertly crafted videos that engage audiences and elevate your brand's storytelling to new heights."},{id:2,img:"/photong.avif", header:"Branding & Design", text:"Unique branding solutions that resonate with your audience, enhancing your identity and market presence effectively."},{id:3, img:'/phot1.avif', header:"Strategic marketing services", text:"Engaging digital marketing strategies for growth."}]
+
+     const { hash } = useLocation();
+
+    useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.replace('#', ''));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [hash]);
   return (
     <div className='Section1' >
 
@@ -89,7 +101,7 @@ const Home = () => {
       </div>
       </div>
 
-<div  className="GGa">
+<div  className="GGa" id="portfolio">
       <div className="Ga" >
         <div className="Ga1">Gallery Hub</div>
          <div className='TN'></div>
