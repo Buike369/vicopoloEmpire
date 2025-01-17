@@ -1,11 +1,31 @@
 .ServicesTag{
     .ServicesTag1{
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         min-height: 70vh;
+        overflow: hidden;
             background: linear-gradient(180deg, #050505, #061916, rgb(5 8 7));
+            
+@media(max-width:768px) {
+        min-height: 300px;
+        max-height: 400px;
+    }
+
+            img{
+                position: absolute;
+                top:0;
+                right:-10px;
+                width: 100%;
+                 
+
+                 @media(min-width:769px){
+                    display:none;
+                 }
+
+            }
 
         .ServicesTag2{
             font-size: 50px;
@@ -34,6 +54,8 @@
     }
 
         .ServicesTag4{
+
+            padding: 4px 15px;
             .ServicesTag5{
                 text-align: center;
                 font-size: 34px;
@@ -63,7 +85,7 @@
                        @media(max-width:768px){
                   
                       flex-direction:column;
-                      padding:15px;
+                    //   padding:15px;
             }
 
                 
