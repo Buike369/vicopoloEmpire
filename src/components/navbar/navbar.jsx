@@ -80,8 +80,9 @@ const Header = () => {
 
             <div><a href="/" className="Brand">
             <div className='headerLogo'>
+              <div className='kingFD'></div>
               {/* <p className='AMAd'>Bkm </p> */}
-            <img src="/vEmpre2.png" alt="" className=''  style={{width:"50px"}}/>
+            <img src="/vEmpre2.png" alt="" className=''  style={{width:"70px"}}/>
             {/* <p className='AMAd'>VicopoloEmpire </p> */}
             </div>
             </a></div>

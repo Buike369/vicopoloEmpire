@@ -1,5 +1,8 @@
 import React, {useEffect} from 'react'
 import { useLocation } from 'react-router'
+import 'aos/dist/aos.css'
+import AOS from 'aos';
+
 import "./home.scss"
 import  Slide from  "../../components/slide/slide"
 import Testimony  from "../../components/testimony/testimony"
@@ -18,7 +21,12 @@ const Home = () => {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }
-  }, [hash]);
+  }, [hash]); useEffect(()=>{
+    AOS.init({once: true});
+    // AOS.init();
+  },[])
+
+
   return (
     <div className='Section1' >
 
@@ -28,7 +36,7 @@ const Home = () => {
         <div className='sectionMainA'>
           <div  className='enn'>Transform Your <span >Digital Presence</span> with VicpoloEmpire</div>
           <p className='enn1'>Transforming ideas into stunning visual experiences for your business.</p>
-         <a href="/contact"><div className='rt'> <button>Discover</button></div></a>
+         <a href="/services"><div className='rt'> <button>Discover</button></div></a>
         </div>
         <div className='sectionMainA  imgMaDiv'>
           <img src="/photo23.avif" alt="" className='imgMain' />
@@ -38,11 +46,13 @@ const Home = () => {
       
   <div className="FFJ"></div>
 <div  className='OurService'>
-  <p className='OurServe'>Our Services</p>
+  <p className='OurServe' data-aos="fade-up" data-aos-duration="500"
+             data-aos-easing="linear"  >Our Services</p>
   <div className='LineP'></div>
       <div className='Services'>
         {card.map((app)=>(
-        <div className='serviceCard' key={app.id}>
+        <div className='serviceCard' key={app.id}  data-aos="fade-up" data-aos-duration="500"
+             data-aos-easing="linear" >
           <div  className='FImg'>
             <img  src="/iii.svg" alt=""/>
            </div>
@@ -59,7 +69,8 @@ const Home = () => {
 
  <div className='FT'>
       <div className='Craft'  >
-        <div className='Craft1 rtr'>
+        <div className='Craft1 rtr'data-aos="fade-up" data-aos-duration="500"
+             data-aos-easing="linear" >
           {/* <div className="CratU"></div> */}
           <div  className='Craft2'>Creating Compelling Visual Journey</div>
           
@@ -75,7 +86,8 @@ const Home = () => {
   </div>
  </div>
         </div>
-        <div className='Craft1'>
+        <div className='Craft1' data-aos="fade-up" data-aos-duration="500"
+             data-aos-easing="linear" >
             <img src="/photo.avif"  alt=""  />
         </div>
       </div>
@@ -83,13 +95,16 @@ const Home = () => {
       
 <div  className="bb">
       <div className='MdSolutions'>
-        <div className='MdSolutions1'>Artistic Media Concepts</div>
+        <div className='MdSolutions1' data-aos="fade-right" data-aos-duration="500"
+             data-aos-easing="linear"  >Artistic Media Concepts</div>
         <div className='TN'></div>
-        <div className='MdSolutions2'>Transforming brands through innovative video production, design,   web development, AI services and digital marketing strategies tailored for success.</div>
+        <div className='MdSolutions2' data-aos="fade-right" data-aos-duration="500"
+             data-aos-easing="linear" >Transforming brands through innovative video production, design,   web development, AI services and digital marketing strategies tailored for success.</div>
 
         <div  className='MdSolutions3'>
           {card1.map((app)=>(
-          <div  key={app.id} className="MdSolutions4">
+          <div  key={app.id} className="MdSolutions4"data-aos="fade-up" data-aos-duration="500"
+             data-aos-easing="linear"  >
               <div  className='MdSolutions5'><img src={app.img} alt=""className='mImg' /></div>
               <div className='MdSolutions6'>{app.header}</div>
               <div className='MdSolutions7'>{app.text}.</div>
@@ -103,9 +118,11 @@ const Home = () => {
 
 <div  className="GGa" id="portfolio">
       <div className="Ga" >
-        <div className="Ga1">Gallery Hub</div>
-         <div className='TN'></div>
-        <div className="Ga2">Explore our creative visual storytelling through stunning imagery and design.</div>
+        <div className="Ga1" >Gallery Hub</div>
+         <div className='TN'data-aos="fade-down" data-aos-duration="500"
+             data-aos-easing="linear" ></div>
+        <div className="Ga2"data-aos="fade-up" data-aos-duration="500"
+             data-aos-easing="linear"   >Explore our creative visual storytelling through stunning imagery and design.</div>
 
 
         <div className="Ga3">

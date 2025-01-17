@@ -79,9 +79,18 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
+    position:relative;
 
 }
-
+.kingFD{
+    position:absolute;
+    width:30px;
+    height: 14px;
+    background-color: #a3fafa;
+    z-index: -1;
+    bottom: 0;
+    filter: blur(7px);
+}
 /* .NowB{
     border:0;
     outline:0;
