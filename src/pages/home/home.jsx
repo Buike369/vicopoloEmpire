@@ -2,6 +2,8 @@ import React, {useEffect} from 'react'
 import { useLocation } from 'react-router'
 import 'aos/dist/aos.css'
 import AOS from 'aos';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faVideo, faPalette, faCameraRetro, faLaptopCode, faRobot } from '@fortawesome/free-solid-svg-icons';
 
 import "./home.scss"
 import  Slide from  "../../components/slide/slide"
@@ -9,7 +11,7 @@ import Testimony  from "../../components/testimony/testimony"
 
 const Home = () => {
 
-  const card =[{id:1,img:"kbbb2.png", header:'Video Production',text:"Crafting compelling stories through high-quality video."},{id:2,img:"", header:"Branding Design", text:"Designing unique brand identities that resonate"},{id:3, img:'', header:"Photography Services", text:"Engaging digital marketing strategies for growth."},{id:4, img:'', header:"Web Development", text:"Build dynamic, secure, user-friendly websites for everyone."},{id:5, img:'', header:"AI Services", text:"Develop AI-powered, secure, user-friendly solutions for everyone."}]
+  const card =[{id:1,img: faVideo, header:'Video Production',text:"Crafting compelling stories through high-quality video."},{id:2,img:faPalette, header:"Branding Design", text:"Designing unique brand identities that resonate"},{id:3, img:faCameraRetro, header:"Photography Services", text:"Engaging digital marketing strategies for growth."},{id:4, img:faLaptopCode, header:"Web Development", text:"Build dynamic, secure, user-friendly websites for everyone."},{id:5, img:faRobot, header:"AI Services", text:"Develop AI-powered, secure, user-friendly solutions for everyone."}]
    const card1 =[{id:1,img:"/phot.avif", header:'Video Production Service',text:"Expertly crafted videos that engage audiences and elevate your brand's storytelling to new heights."},{id:2,img:"/photong.avif", header:"Branding & Design", text:"Unique branding solutions that resonate with your audience, enhancing your identity and market presence effectively."},{id:3, img:'/phot1.avif', header:"Strategic marketing services", text:"Engaging digital marketing strategies for growth."}]
 
      const { hash } = useLocation();
@@ -32,6 +34,7 @@ const Home = () => {
 
       <div className='sectionMain'>
         <div  className='col'></div>
+                <div className='rrImg'>< FontAwesomeIcon icon={faCameraRetro} className="serviceIcon" /></div>
         <div className='rrImg'><img src="rrrepeat1.svg" alt="" /></div>
         <div className='sectionMainA'>
           <div  className='enn'>Transform Your <span >Digital Presence</span> with VicpoloEmpire</div>
@@ -56,9 +59,9 @@ const Home = () => {
           <div  className='FImg'>
             <img  src="/iii.svg" alt=""/>
            </div>
-           {/* <div  className='IconImg'>
-            <img  src={app.img}  alt=""/>
-           </div> */}
+           <div  className='IconImg'>
+< FontAwesomeIcon icon={app.img} className="serviceIcon" />
+           </div>
           <p className='Vp'>{app.header}</p>
           <p className='Vp1'>{app.text}</p>
 

@@ -159,7 +159,8 @@
 }
 
 .partnerShip {
-    color:#75c5ba;
+    /* color:#75c5ba; */
+    color:#fff;
     margin: 15px 5px 20px 5px;
     line-height: 20px;
     font-size: 16px;

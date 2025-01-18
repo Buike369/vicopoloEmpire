@@ -69,11 +69,14 @@ padding-bottom: 30px;
 .Welcome {
   color:#fff;
   font-size: 52px;
+  line-height: 40px;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
     background: linear-gradient(168deg, #8cd3cb 7.37%, #3cadd5 25.38%, #308b7c 42.56%, #6dc59c 60.52%);
     -webkit-background-clip: text;
     background-clip: text;
-    font-weight: 600;
+    font-weight: 900;
+    margin-bottom: 15px;
+    margin-top: 5ch;
 }
 h3, h2{
     color:#fff;
