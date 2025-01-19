@@ -82,8 +82,8 @@ const Header = () => {
             <div className='headerLogo'>
               {/* <div className='kingFD'></div> */}
               {/* <p className='AMAd'>Bkm </p> */}
-            <img src="/vEmpre.png" alt="" className=''  style={{width:"30px"}}/>
-            <p className='AMAd'>VicopoloEmpire </p>
+            <img src="/Vempire.png" alt="" className=''  style={{width:"90px"}}/>
+            {/* <p className='AMAd'>VicopoloEmpire </p> */}
             </div>
             </a></div>
             {(tr === "/register") || (tr === "/login") || (tr === "/forget-password") || (tr === "/update-password")  ? "":
